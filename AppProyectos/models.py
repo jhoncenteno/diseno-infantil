@@ -8,9 +8,9 @@ class Proyectos(models.Model):
     titulo = models.CharField(max_length=50)
     
     TYPE = (                                                                   
-            ('Of', 'Oficina'),
-            ('Res', 'Residencial'),                                   
-            ('Com', 'Comercial')                                     
+            ('Of', 'Office'),
+            ('Res', 'Residential'),                                   
+            ('Com', 'Commercial')                                     
     )                                                                      
     type = models.CharField(max_length=150, null=True, choices=TYPE)  
     
