@@ -1,0 +1,23 @@
+{% extends '0base.html' %}
+
+{% load static %}
+
+{% block title %} Message Sent {% endblock %}
+
+{% block content %}
+
+    <div id="contact">
+        <br>
+        <div class="container">
+
+            <div class="alert alert-success text-center">
+                <br><br>
+                <h1><strong>Well done!</strong></h1><br><h4>You succesfully sent your message.</h4> 
+                <br><br>
+            </div>
+            
+            <a href="{% url 'home' %}" class="btn btn-custom btn-lg">Go back to home</a>
+        </div>
+    </div>
+    <br>
+{% endblock %}

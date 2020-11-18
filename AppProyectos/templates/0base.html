@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+  <head>
+    <title>{% block title %}  {% endblock %}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="shortcut icon" href="{% static 'img/icon.png' %}" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">   
+    <!-- Font awesome OPTIONAL -->
+    <script src="https://kit.fontawesome.com/4b027f57d0.js" crossorigin="anonymous"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nivo-lightbox/nivo-lightbox.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nivo-lightbox/default.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+  </head>
+
+  
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <!-- BAR DE NAVEGACION -->
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+                    <a class="navbar-brand page-scroll" href="{% url 'home' %}">NEST</a> </div>
+        <!-- /.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- CONTENIDO CAMBIANTE-->
+    {% block content %}
+
+    {% endblock content %}
+
+    <!-- PIE DE PAGINA -->
+    <div id="footer">
+      <div class="container text-center">
+        <div class="social">
+          <ul>
+            <li><a href="https://github.com/jhoncenteno"><i class="fa fa-github"></i></a></li>
+            <li><a class="not-active" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="not-active" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="not-active" href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a class="not-active" href="#"><i class="fa fa-pinterest"></i></a></li>
+            <li><a class="not-active" href="#"><i class="fa fa-youtube"></i></a></li>
+          </ul>
+        </div>
+        <div>
+          <p>&copy; 2016 NEST. All rights reserved. Designed by <a href="http://www.templatewire.com" rel="nofollow">TemplateWire</a></p>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="{% static 'js/jquery.1.11.1.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/SmoothScroll.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/nivo-lightbox.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.isotope.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jqBootstrapValidation.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+
+  </body>
+
+</html>

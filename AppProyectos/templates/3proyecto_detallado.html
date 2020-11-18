@@ -1,0 +1,25 @@
+{% extends '0base.html' %}
+
+{% load static %}
+
+{% block title %} Detail project {% endblock %}
+
+{% block content %}
+
+
+<div class="container-fluid" id="proyectos">
+  <br><br><br><br><br><br><br><br>
+  <div class="ProyectoDetallado">
+    <div class="card" id="CardDetallado">
+      <img class="card-img-top" style="width:100%" src="{{ proyecto.imagen.url }}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{ proyecto.titulo }}</h5>
+        <p class="card-text" id="pProyectos">{{ proyecto.contenido }}</p>
+      </div>
+    </div>
+    <br><br>
+    <a href="{% url 'proyectos' %}" class="btn btn-custom btn-lg">Go back to projects</a>
+    <br><br>
+  </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,1 @@
+web: gunicorn DiseñoInterior.wsgi --log-file - 
